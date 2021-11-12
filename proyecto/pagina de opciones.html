@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> 
+    <title> cajero automatico pagina principal </title>
+    <link rel= "stylesheet" href="estilo 3.css";>
+
+    <script>
+      function validarpassword(){
+          texto= prompt("Para acceder a la siguiente pagina ingrese su numero de tarjeta");
+          while (texto!="18812") {
+              alert (" Su numero de tarjeta incorrecto");
+              texto= prompt("Para acceder a la siguiente pagina ingrese su numero de tarjeta");
+            
+              
+  
+          }
+          alert("Numero de tarjeta correcto") ;
+      }
+
+  </script>  
+ <script>validarpassword();</script>
+
+ <script>
+
+  function validarpassword(){
+      texto= prompt("Para acceder a la siguiente pagina ingrese su numero de PIN");
+      while (texto!="2021") {
+           alert("PIN invalido");
+           texto= prompt("Para acceder a la siguiente pagina ingrese su numero de tarjeta");  
+      }
+      alert("PIN valido") ;
+  }
+</script>
+
+<body>
+  <script>validarpassword();</script>
+</body>
+
+</head>
+
+
+<body>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center><p> Eliga una de las siguientes opciones para poder ver el saldo disponiblre en su tarjeta de credito </p></center>
+    
+    
+<center><a href="dolar.html" type= "button" class="boton_2"> Dolares $</a></center> <br> <br>
+  
+  
+
+<center><a href="quezales.html" type= "button" class="boton_2"> Quetzales Q</a></center> <br> <br>
+
+
+
+
+  
+<style type="text/css">
+  .boton_2{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-radius: 6px;
+  border: 2px solid blue;
+}
+.boton_2:hover{
+  color: #1883ba;
+  background-color: #ffffff;
+}
+</style>
+    
+</body>
+</html>

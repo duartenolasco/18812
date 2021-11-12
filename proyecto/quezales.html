@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"> 
+    <title> Tarjeta de credito en Quetzales </title>
+    <link rel= "stylesheet" href="estilos 1 .css";>
+</head>
+
+    <body>
+        <br><br><br><br><br><br>
+         <center><h4> Tarjeta de credito con el saldo en Quetzales  </h4></center>
+          
+         <br> 
+        
+        <form action="">
+              <center><p> Su saldo disponible en Quetzales es de Q8000 </p>  </center>
+              <center><p>Ingresar el monto que desea retirar</p></center> 
+           <br> 
+            <center><input type="text" id="sum3" cols="20" rows="3"  style="overflow:auto; border: 1px solid #ff6666;"></center>  <br> <br>
+            <center><input type="button" value="retirar efectivo"  class = " boton_2" onclick="(  sum1(1,2) );"></center> <br> <br>
+            
+  
+            <style type="text/css">
+                .boton_2{
+                text-decoration: none;
+                padding: 10px;
+                font-weight: 600;
+                font-size: 20px;
+                color: rgb(255, 255, 255);
+                background-color: rgb(0, 0, 0);
+                border-radius: 6px;
+                border: 2px solid blue;
+              }
+              .boton_2:hover{
+                color: #1883ba;
+                background-color: #ffffff;
+              }
+              </style>
+  </style>
+
+        </form>
+
+        <script>
+                
+                var sum1 = function(sum3){      
+                var sum3 = parseFloat(document.getElementById("sum3").value);  
+                var sum2 = (8000);
+            
+                  
+                if( sum3 < 8001){
+                    var total1 = sum2 - sum3 ;     
+                alert   ( "Saldo restante: " +   total1);
+                alert   ("Gracias por su lealtad")
+                }   else { alert ("Saldo insuficiente")}                  
+            }
+        </script>
+        <a href="pagina de opciones.html" class="boton_2">Regresar</a>  <br> <br> <br>
+
+
+  
+        
+    </body>
+</html>
